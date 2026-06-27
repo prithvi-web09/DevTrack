@@ -1106,7 +1106,7 @@ body {
     .streak {
         width: 92vw;
         margin-left: 4vw;
-        min-height: auto;
+        min-height: 45vh;
         padding-bottom: 3vh;
     }
     .days {
@@ -1124,10 +1124,11 @@ body {
         padding-bottom: 4vh;
     }
     .rocket {
-        height: 18vh;
-        width: 28vw;
-        top: 20px;
-        right: 20px;
+        height: 14vh;
+        width: 30vw;
+        top: auto;
+        bottom: 15px;
+        right: 15px;
     }
     .rocket i {
         font-size: 3.5rem;
