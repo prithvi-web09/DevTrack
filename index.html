@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page1">
+         <div class="nav">
+        <i class="ri-terminal-box-line"></i>
+        <h2>DevTrack</h2>
+        <div class="search">
+            <i class="ri-search-line"></i>
+        </div>
+    </div>
+    <div class="streak">
+        <div class="days">
+            <h2>12 Days Streak 🔥</h2>
+        </div>
+        <h4>Track Your Growth.<br>Build Your Future.</h4>
+        <p>A personal analytics dashboard for<br>developers and students.</p>
+        <div class="rocket">
+            <i class="ri-rocket-2-fill"></i>
+        </div>
+    </div>
+    <div class="discipline">
+        <div class="skills">
+            <i class="ri-brain-2-fill"></i>
+            <h3>Skills Learned</h3>
+            <h2 id="count">0</h2>
+        </div>
+        <div class="projects">
+            <i class="ri-html5-line"></i>
+            <h3>Projects</h3>
+             <h3 id="projectsCount">0</h3>
+        </div>
+        <div class="dsa">
+          <i class="ri-terminal-box-line"></i>
+            <h3>DSA Solved</h3>
+            <h3>0</h3>
+        </div>
+        <div class="study">
+           <i class="ri-time-line"></i>
+            <h3>Study Hours</h3>
+            <div class="counts">0</div>
+        </div>
+
+    </div>
+    <div class="skills-mastery">
+        <h3>Skills-Mastery</h3>
+    </div>
+     <div class="skills-container">
+        
+    </div>
+    <div class="project-container"></div>
+    
+    </div>
+   
+    
+    <div class="down-nav">
+        <button><i class="ri-dashboard-fill"></i></button>
+        <button> <i class="ri-brain-2-fill"></i></button>
+        <button> <i class="ri-braces-line"></i></button>
+        <button><i class="ri-flag-fill"></i></button>
+    </div>
+   
+    <div id="page2">
+        <div class="nav">
+        <i class="ri-terminal-box-line"></i>
+        <h2>DevTrack</h2>
+        </div>
+        <div class="h1">
+            <h1>Log Daily Stats</h1>
+            <p>Update your progress for today</p>
+        </div>
+        <div class="study-time">
+            <h2>Study Duration</h2>
+            <p>Deep work session only</p>
+            <!-- Study Duration counter (inside .study-time) -->
+            <div class="counter">
+                <button class="minus" id="studyMinus">
+                <i class="ri-subtract-line"></i>
+                </button>
+                <div class="count" id="studyCount">0</div>
+                <div class="hrs">hrs</div>
+                <button class="add" id="studyAdd">
+                <i class="ri-add-line"></i>
+                </button>
+            </div>
+        </div>
+        <div class="task-contain">
+            <button class="add-btn">
+                <i class="ri-add-line"></i>
+            </button>
+        </div>
+        <div class="mood">
+            <div class="mood-box drained">
+                <i class="ri-emotion-sad-fill"></i>
+                <h3>Drained</h3>
+            </div>
+            <div class="mood-box low">
+                <i class="ri-emotion-unhappy-fill"></i>
+                <h3>Low</h3>
+            </div>
+            <div class="mood-box steady">
+                <i class="ri-emotion-normal-line"></i>
+                <h3>Steady</h3>
+            </div>
+            <div class="mood-box high">
+                <i class="ri-emotion-line"></i>
+                <h3>High</h3>
+            </div>
+            <div class="mood-box god-mode">
+                <i class="ri-rocket-line"></i>
+                <h3>God mode</h3>
+            </div>
+        </div>
+        <div class="motivation">
+            <h2>Keep Shipping</h2>
+            <p>Consistency is the key to mastering any <br>craft</p>
+        </div>
+    </div>
+    <div class="modal">
+            <div class="modal-content">
+                <input type="text" id="taskInput" placeholder="Enter your daily task">
+                <input type="text" id="Description" placeholder="Description of the task">
+                 <button id="createTask">
+                Create Task
+                </button>
+                <button id="cross"><i class="ri-close-fill"></i></button>
+            </div>
+        </div>
+    <div id="page3">
+        <div class="nav">
+        <i class="ri-terminal-box-line"></i>
+        <h2>DevTrack</h2>
+        </div>
+        <div class="arsenal">
+            <h4>ADD NEW SKILL</h4>
+            <h1>Expand Your <span>Arsenal.</span></h1>
+            <p>Track your technical progression with<br>precision. Define your mastery level and<br>categorize your professional stack.</p>
+            <h4>Skill Name:You think to Master</h4>
+            <input type="text" id="skill-name" placeholder="e.g React,Rust,Figma">
+            <button id="done">Done</button>
+
+        </div>
+        <div class="skill-container"></div> 
+    </div>
+    <div id="page4">
+         <div class="nav">
+        <i class="ri-terminal-box-line"></i>
+        <h2>DevTrack</h2>
+        </div>
+        <div class="project">
+            <h1>Initialize Project</h1>
+            <p>Set up your repository workspace and track<br>progress in real-time</p>
+        </div>
+        <div class="project-identity">
+            <i class="ri-artboard-fill"></i>
+            <h2>Project Identity</h2>
+            <h4>Project Name</h4>
+            <input type="text" id="project-name" placeholder="e.g Cloudpulse Dashboard">
+            <h4>Detailed Description</h4>
+            <textarea id="project-descript" placeholder="e.g Briefly describe the architectural goals"></textarea>
+            </div>
+            <div class="source">
+                <h1>Source<br>Control</h1>
+                <h4>Your GitHub Repository Link:</h4>
+                <input type="text" id="link" placeholder="https://github.com/username">
+                <p>Ensure the repository is public</p>
+            </div>
+            <button id="create-project">Create Project</button>
+            
+        </div>
+
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
